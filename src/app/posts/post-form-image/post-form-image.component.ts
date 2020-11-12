@@ -2,7 +2,6 @@ import {
   Component,
   Output,
   EventEmitter,
-  ViewChild,
   Input,
   OnChanges,
   SimpleChanges,
