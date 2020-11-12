@@ -1,0 +1,16 @@
+<div>
+  <img #thumbnail src="{{ image }}" class="img-thumbnail" alt="Post image" />
+  <input
+    #fileInput
+    type="file"
+    accept="image/png"
+    class="invisible"
+    (change)="uploadImage($event)"
+  />
+  <button
+    class="btn btn-secondary btn-lg btn-block"
+    (click)="fileInput.click()"
+  >
+    Choose a picture
+  </button>
+</div>
