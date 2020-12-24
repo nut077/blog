@@ -16,6 +16,9 @@ export class PostFormComponent {
   }
 
   createPost(): void {
+    if (this.post.image === undefined) {
+      this.post.image = '/assets/images/no-image.png';
+    }
     this.formSubmit.emit(this.post);
     this.resetPost();
   }
@@ -24,7 +27,7 @@ export class PostFormComponent {
     this.post = new Post();
   }
 
-  changeImage(image): void {
+  changeImage(image: string): void {
     this.post.image = image;
   }
 }

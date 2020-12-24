@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Post } from '../shared/post.model';
 
 @Component({
@@ -8,4 +8,9 @@ import { Post } from '../shared/post.model';
 })
 export class PostListComponent {
   @Input() posts: Post[];
+  @Output() btnClick = new EventEmitter();
+
+  onClick(): void {
+    this.btnClick.emit();
+  }
 }
