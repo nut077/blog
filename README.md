@@ -1,5 +1,9 @@
 # Blog
 
+for intellij prettier plugin<br>
+npm install --global prettier<br>
+
+
 ## install bootstrap and jquery
 npm install bootstrap jquery
 
